@@ -48,6 +48,11 @@ public class ExportAction extends HanAbstractAction {
 
     @Override
     protected String getShortDescription() {
-        return "디렉토리에 풀기";
+        return "Export to a folder";
     }
+
+	@Override
+	protected String getIconPath() {
+		return "net/hanjava/alole/action/export.gif";
+	}
 }

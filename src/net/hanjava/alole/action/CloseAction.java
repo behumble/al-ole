@@ -27,4 +27,9 @@ public class CloseAction extends HanAbstractAction {
     public void actionPerformed(ActionEvent e) {
         mainPanel.setModel( null, null );
     }
+
+	@Override
+	protected String getIconPath() {
+		return "net/hanjava/alole/action/close.gif";
+	}
 }
