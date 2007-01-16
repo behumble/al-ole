@@ -27,7 +27,7 @@ public class SaveAction extends HanAbstractAction {
 
     @Override
     protected String getShortDescription() {
-        return "컴파운드 문서(doc,xls,ppt)로 쓰기";
+        return "Save as OLE file(doc,xls,ppt)";
     }
 
     public void actionPerformed(ActionEvent e) {
@@ -58,5 +58,10 @@ public class SaveAction extends HanAbstractAction {
         }
 
     }
+
+	@Override
+	protected String getIconPath() {
+		return "net/hanjava/alole/action/save.gif";
+	}
 
 }

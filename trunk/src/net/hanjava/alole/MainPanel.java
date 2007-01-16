@@ -6,6 +6,7 @@ import java.io.File;
 
 import javax.swing.Action;
 import javax.swing.ActionMap;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JToolBar;
@@ -104,7 +105,10 @@ public class MainPanel extends JPanel {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        JFrame frame = new JFrame("¾Ë OLE");
+        JFrame frame = new JFrame("Al OLE - http://hanjava.net/call-151");
+        ClassLoader cl = MainPanel.class.getClassLoader();
+        ImageIcon icon = new ImageIcon(cl.getResource("net/hanjava/alole/icon.gif"));
+        frame.setIconImage(icon.getImage());
         frame.setSize(500, 500);
         frame.setLocationByPlatform(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

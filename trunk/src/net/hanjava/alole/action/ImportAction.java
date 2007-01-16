@@ -50,6 +50,11 @@ public class ImportAction extends HanAbstractAction {
 
     @Override
     protected String getShortDescription() {
-        return "디렉토리 임포트";
+        return "Import a folder";
     }
+
+	@Override
+	protected String getIconPath() {
+		return "net/hanjava/alole/action/import.gif";
+	}
 }

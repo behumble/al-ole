@@ -71,6 +71,11 @@ public class OpenAction extends HanAbstractAction {
 
     @Override
     protected String getShortDescription() {
-        return "컴파운드 문서(doc,xls,ppt) 읽기";
+        return "Open a OLE file(doc,xls,ppt)";
     }
+
+	@Override
+	protected String getIconPath() {
+		return "net/hanjava/alole/action/open.gif";
+	}
 }
